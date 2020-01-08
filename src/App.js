@@ -1,26 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+
+//AXIOS PARA CONSULTAR LA API || REACT ROUTER DOM PARA LAS URLS
+//npm install --save axios react-router-dom
+
+//Layouts
+import Header from './Components/Layouts/Header'
+import Footer from './Components/Layouts/Footer'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Fragment>
+      <Header/>
+
+      <Footer/>
+    </Fragment>
+  )
 }
 
-export default App;
+export default App
