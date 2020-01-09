@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react'
+import Axios from 'axios'
 
 //Utilities
 import Error from '../../Utilities/Error/Error'
@@ -15,15 +16,31 @@ function Agregar(){
         setCategoria(e.target.value)
     }
 
-    const handleSubmit = e =>{
+    const handleSubmit = async e =>{
         e.preventDefault()
 
         if( nombre === '' || precio === '' || categoria === '' ){
             setError(true)
-            return null
+            return
         }
 
         setError(false)
+
+        try {
+            
+            const url = "http://localhost:4000/restaurant"
+
+            const resultado = await Axios.post(url, {
+                nombrePlatillo : nombre,
+                precioPlatillo : precio,
+                categoria
+            })
+
+            console.log(resultado)
+
+        } catch (error) {
+            
+        }
 
     }
 

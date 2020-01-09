@@ -15,6 +15,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 //.....................//
 //En caso de que no funcione ejecutar de primero el siguiente comando...
 //npm install json-server
+
+//Para encender el puerto 4000 puedes utilizar el siguiente comando
+//npx json-server db.json -p 4000
 //.....................//
 
 
@@ -35,7 +38,7 @@ function App() {
       
       const consultarApi= async () =>{
 
-          const url = `http://localhost:4000/restaurant`
+          const url = "http://localhost:4000/restaurant"
 
           const resultado = await Axios.get(url)
 
