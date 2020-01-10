@@ -1,0 +1,20 @@
+//AXIOS PARA CONSULTAR LA API || REACT ROUTER DOM PARA LAS URLS
+//npm install --save axios react-router-dom
+
+//Json-server para crear el servidor con el siguiente comando
+//Esto se ejecutara despues que tengas listo el db.json
+//npm install -g json-server
+//........................//
+//npx json-server db.json -p 4000
+//-p 4000 = puerto 4000
+
+//.....................//
+//En caso de que no funcione ejecutar de primero el siguiente comando...
+//npm install json-server
+
+//Para encender el puerto 4000 puedes utilizar el siguiente comando
+//npx json-server db.json -p 4000
+//.....................//
+
+//Alerta
+//npm install sweetalert2

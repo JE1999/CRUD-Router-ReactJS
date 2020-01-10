@@ -1,10 +1,12 @@
 import React, { Fragment, useState } from 'react'
 import Axios from 'axios'
+import Swal from 'sweetalert2'
+import { withRouter } from 'react-router-dom'
 
 //Utilities
 import Error from '../../Utilities/Error/Error'
 
-function Agregar(){
+function Agregar({history, setRecarga}){
 
     const [ nombre, setNombre ] = useState('')
     const [ precio, setPrecio ] = useState('')
@@ -37,10 +39,26 @@ function Agregar(){
             })
 
             console.log(resultado)
+            if(resultado.status === 201){
+                Swal.fire(
+                    'Agregado!',
+                    'El platillo se agrego correctamente!',
+                    'success'
+                )
+            }
 
         } catch (error) {
-            
+            Swal.fire({
+                icon: 'error',
+                title: 'Oops...',
+                text: 'Ha ocurrido un problema!',
+            })
         }
+
+        setRecarga(true)
+        
+        //Redirigir al inicio
+        history.push('/')
 
     }
 
@@ -138,4 +156,4 @@ function Agregar(){
 
 }
 
-export default Agregar
+export default withRouter(Agregar)

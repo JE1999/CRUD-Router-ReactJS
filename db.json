@@ -29,6 +29,30 @@
       "precioPlatillo": "125",
       "categoria": "postre",
       "id": 5
+    },
+    {
+      "nombrePlatillo": "Cesar",
+      "precioPlatillo": "290",
+      "categoria": "ensalada",
+      "id": 6
+    },
+    {
+      "nombrePlatillo": "Churrasco",
+      "precioPlatillo": "890",
+      "categoria": "cortes",
+      "id": 7
+    },
+    {
+      "nombrePlatillo": "Pastel de zanahorias",
+      "precioPlatillo": "80",
+      "categoria": "postre",
+      "id": 8
+    },
+    {
+      "nombrePlatillo": "Ensalada Rusa",
+      "precioPlatillo": "50",
+      "categoria": "ensalada",
+      "id": 9
     }
   ]
 }
