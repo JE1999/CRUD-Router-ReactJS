@@ -61,9 +61,9 @@
       "id": 10
     },
     {
-      "precioPlatillo": "123456789",
+      "precioPlatillo": "1234567890",
       "nombrePlatillo": "prueba",
-      "categoria": "postre",
+      "categoria": "ensalada",
       "id": 11
     }
   ]

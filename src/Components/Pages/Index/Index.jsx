@@ -9,7 +9,7 @@ function Index({productos}){
         <Fragment>
             <div>
                 <h3 className="display-4">Mis Productos</h3>
-                <table className="table table-striped">
+                <table className="table table-striped table-bordered">
                     <thead>
                         <tr>
                             <th className="text-success" scope="col">#</th>
