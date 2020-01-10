@@ -56,7 +56,19 @@ function App() {
             )} />
 
             {/* Se recomienda tener de ultimo lo que pasamos por parametros como por ejemplo la siguiente ruta */}
-            <Route exact path="/editar/:id" component={Editar} />
+            <Route exact path="/editar/:id" render={props =>{
+
+              const idProducto = parseInt(props.match.params.id) 
+              const producto = productos.filter(productoFilter => productoFilter.id === idProducto)
+
+              return(
+                <Editar
+                  producto={producto[0]}
+                  setRecarga={setRecarga}
+                />
+              )
+
+            }} />
           </Switch>
         </main>
 

@@ -1,9 +1,9 @@
 {
   "restaurant": [
     {
-      "precioPlatillo": "200",
+      "precioPlatillo": "220",
       "nombrePlatillo": "Cheesecake",
-      "categoria": "postres",
+      "categoria": "postre",
       "id": 1
     },
     {
@@ -13,8 +13,8 @@
       "id": 2
     },
     {
+      "precioPlatillo": "450",
       "nombrePlatillo": "Mofongo",
-      "precioPlatillo": "500",
       "categoria": "cortes",
       "id": 3
     },
@@ -53,6 +53,18 @@
       "precioPlatillo": "50",
       "categoria": "ensalada",
       "id": 9
+    },
+    {
+      "nombrePlatillo": "Helado Chocolate",
+      "precioPlatillo": "55",
+      "categoria": "postre",
+      "id": 10
+    },
+    {
+      "precioPlatillo": "123456789",
+      "nombrePlatillo": "prueba",
+      "categoria": "postre",
+      "id": 11
     }
   ]
 }

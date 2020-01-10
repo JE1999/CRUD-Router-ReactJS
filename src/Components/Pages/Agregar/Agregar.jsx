@@ -38,7 +38,6 @@ function Agregar({history, setRecarga}){
                 categoria
             })
 
-            console.log(resultado)
             if(resultado.status === 201){
                 Swal.fire(
                     'Agregado!',
