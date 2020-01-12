@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useRef } from 'react'
+import React, { Fragment, useState, useRef, useEffect } from 'react'
 import Axios from 'axios'
 import { withRouter } from 'react-router-dom'
 import Swal from 'sweetalert2'
@@ -19,18 +19,33 @@ function Editar(props){
 
     const [ error, setError ] = useState(false)
 
+    useEffect(() => {
+      //Reload
+    }, [])
+
     const leerCategoria = e =>{
         setCategoria(e.target.value)
     }
 
     const handleSubmit = async e =>{
         e.preventDefault()
+
+        const nuevoPrecioPlatillo = precioPlatilloRef.current.value,
+              nuevoNombrePlatillo = nombrePlatilloRef.current.value
+              
+        const categoriaPlatillo = (categoria === '') ? producto.categoria : categoria
+
+        if(nuevoPrecioPlatillo === '' || nuevoNombrePlatillo === '' || categoriaPlatillo === ''){
+            setError(true)
+            return
+        }
+
+        setError(false)
         
-        let categoriaPlatillo = (categoria === '') ? producto.categoria : categoria
 
         const editarPlatillo = {
-            precioPlatillo : precioPlatilloRef.current.value,
-            nombrePlatillo : nombrePlatilloRef.current.value,
+            precioPlatillo : nuevoPrecioPlatillo,
+            nombrePlatillo : nuevoNombrePlatillo,
             categoria : categoriaPlatillo
         }
 

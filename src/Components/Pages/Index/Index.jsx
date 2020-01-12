@@ -3,7 +3,7 @@ import React, { Fragment } from 'react'
 //Utilities
 import ListaProductos from '../../Utilities/Index/ListaProductos'
 
-function Index({productos}){
+function Index({productos, setRecarga}){
 
     return(
         <Fragment>
@@ -24,6 +24,7 @@ function Index({productos}){
                             <ListaProductos
                                 key={productos.id}
                                 productos={productos}
+                                setRecarga={setRecarga}
                             />
                         ))}
                     </tbody>

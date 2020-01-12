@@ -1,70 +1,16 @@
 {
   "restaurant": [
     {
-      "precioPlatillo": "220",
-      "nombrePlatillo": "Cheesecake",
-      "categoria": "postre",
-      "id": 1
-    },
-    {
-      "precioPlatillo": "300",
-      "nombrePlatillo": "Rib Eye 400g",
-      "categoria": "cortes",
-      "id": 2
-    },
-    {
-      "precioPlatillo": "450",
-      "nombrePlatillo": "Mofongo",
-      "categoria": "cortes",
-      "id": 3
-    },
-    {
-      "nombrePlatillo": "Cerveza",
-      "precioPlatillo": "220",
-      "categoria": "bebida",
-      "id": 4
-    },
-    {
-      "nombrePlatillo": "Rebanada de pastel",
-      "precioPlatillo": "125",
-      "categoria": "postre",
-      "id": 5
-    },
-    {
-      "nombrePlatillo": "Cesar",
-      "precioPlatillo": "290",
-      "categoria": "ensalada",
-      "id": 6
-    },
-    {
-      "nombrePlatillo": "Churrasco",
-      "precioPlatillo": "890",
-      "categoria": "cortes",
-      "id": 7
-    },
-    {
       "nombrePlatillo": "Pastel de zanahorias",
       "precioPlatillo": "80",
       "categoria": "postre",
       "id": 8
     },
     {
-      "nombrePlatillo": "Ensalada Rusa",
-      "precioPlatillo": "50",
-      "categoria": "ensalada",
-      "id": 9
-    },
-    {
-      "nombrePlatillo": "Helado Chocolate",
-      "precioPlatillo": "55",
+      "nombrePlatillo": "Jose Eduardo",
+      "precioPlatillo": "999",
       "categoria": "postre",
-      "id": 10
-    },
-    {
-      "precioPlatillo": "1234567890",
-      "nombrePlatillo": "prueba",
-      "categoria": "ensalada",
-      "id": 11
+      "id": 9
     }
   ]
 }

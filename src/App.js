@@ -45,7 +45,8 @@ function App() {
         <main className="container my-5 text-center">
           <Switch>
             <Route exact path="/" render={() =>(
-              <Index 
+              <Index
+                setRecarga={setRecarga}
                 productos={productos}
               />
             )} />
